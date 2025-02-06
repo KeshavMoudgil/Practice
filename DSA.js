@@ -107,3 +107,4 @@ target=7;
 }
   return total;
  }
+console.log('Practice Done');

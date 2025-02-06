@@ -13,3 +13,15 @@ return prefix;
 
 const strings = ["flower","flow","flight"];
 console.log(longestCommonPrefix(strings));
+
+function longestCommonPrefix(str){
+  if(!str.length) return '';
+  str.sort();
+  let first = str[0];
+  let last = str[str.length-1];
+  let i = 0;
+  while(i<str[0] && first[i] === last[i]){
+    i++;
+  }
+  return first.substring(0,i);
+}
